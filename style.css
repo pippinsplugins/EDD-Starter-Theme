@@ -1,0 +1,433 @@
+/*
+Theme Name: Easy Digital Downloads Starter Theme
+Theme URI: http://easydigitaldownloads.com/themes/starter-theme
+Description: A starter theme for developers wanting to build themes for Easy Digital Downloads
+Version: 1.0
+Author: Pippin Williamson
+Author URI: http://pippinsplugins.com
+*/
+
+
+
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {	
+		background: #F0F0F0;
+		font-size: 12px;
+		line-height: 1.5em;
+		color: #555;
+		font-family: 'Droid Sans', arial, serif;
+	}
+	
+	a {
+		text-decoration: none;
+		color: #729A0C;
+	}
+	
+	h1 a, h2 a, h3 a, h4 a {
+		color: #000;
+	}
+	
+	.clearfix:after {
+		display: block;
+		float: none;
+		clear: both;
+		visibility: hidden;
+		text-indent: -9999px;
+		content: ".";	
+	}	
+	
+	/* header */
+
+	#header { 
+		background: #181818;
+		margin: 0 auto;
+		padding: 30px 0;
+		color: #f0f0f0;
+	}
+
+	#header a {
+		color: #fff;
+	}
+
+	#logo-wrap { 
+		margin: 20px auto;
+	}
+	
+	#logo-wrap h1 {
+		line-height: 36px;
+		font-size: 28px;	
+	}
+	
+	/* main nav */
+	
+	#navigation-wrap {
+		background: #eee;
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 20px;	
+	}	
+	
+	#main-nav {
+		border-left: 1px solid #ccc;
+	}	
+	
+	#main-nav ul {
+		
+	}
+	
+	#main-nav li {
+		display: block; 
+		float: left; 
+		margin: 0;
+		padding: 0;
+		line-height: 40px;
+		height: 40px;
+	}
+	
+	#main-nav a {
+		color: #333;
+		display: block; 
+		padding: 0 15px;
+		line-height: 40px;
+		height: 40px;
+		border-right: 1px solid #ccc;
+		text-shadow: 1px 1px 1px #fff;
+		text-decoration: none;
+	}
+
+	#main-nav .current-menu-item a, #main-nav .current_page_item a, #main-nav a:hover {
+		background: #FEFEFE;	
+	}
+
+	#main-nav span#header-cart { 
+		float: right;
+		display: block;
+		border-left: 1px solid #ccc;
+	}
+	
+	/* general/main content */
+	
+	.content {
+		background: #fff;	
+		border: 1px solid #DDD;
+		padding: 20px;
+	}	
+	
+	.entry { 
+		margin: 0 0 20px;
+	}
+	
+	.entry .attachment-thumbnail {
+		float: left;
+		padding: 3px;
+		border: 1px solid #DDD;
+		margin: 0 20px 20px 0;
+	}	
+	
+	
+	h2.title {
+		margin: 0 0 10px;
+		line-height: 1.2em;
+		font-size: 21px;
+		color: #000;
+	}	
+	
+	/* sidebar */
+	
+	.sidebar li.widget {
+		display: block;
+		margin: 0 0 20px;
+	}
+	
+	.sidebar li.widget h3.widget_title {
+		margin: 0 0 10px;
+	}	
+	
+	.sidebar li.widget li {
+		margin: 0 0 5px 0;
+		display: block;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #EEE;
+	}
+	
+	.sidebar #searchinput {
+		position: relative;
+		width: 125px;
+		padding: 8px 30px 8px 10px;
+		outline: none;
+		border: 1px solid #EEE;
+	}
+	
+	.sidebar #searchsubmit {
+		cursor: pointer;
+		font-size: 12px;
+		color: #969696;
+		padding: 8px 0px;
+		width: 80px !important;
+		background: -moz-linear-gradient( top, #F2F2F2 0%, #DBDBDB);
+		background: -webkit-gradient( linear, left top, left bottom, from(#F2F2F2), to(#DBDBDB));
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: 1px solid #CCC;	
+	}
+	
+	
+	/* footer */
+
+	#footer {
+		margin: 20px auto 0;
+		padding: 20px 0 0 0;
+		background: #2E2E2E;
+		border-top: 1px solid #fff;	
+	}
+
+	#footer li.widget {
+		display: block;	
+	}
+
+	#footer .widget li {
+		display: block;
+		padding: 0;
+		margin: 0 0 5px;	
+	}
+
+	#footer .widget h3 {
+		margin: 0 0 20px;
+		padding: 0 0 8px;
+		font-size: 18px;
+		color: #CCC;
+		border-bottom: 1px solid #797979;
+	}
+	
+	#footer .widget li.widget-download-with-thumbnail {
+		
+	}
+	
+	#copyright {
+		text-align: right;
+		background: #252525;
+		padding: 20px 0;
+		border-top: 1px solid #3D3D3D;
+	}	
+	
+	
+	
+	/* store template */
+	
+	.store-template .product {	
+		margin-bottom: 20px;
+	}	
+	
+	.product-image {
+		position: relative;
+		margin: 0 0 20px;
+	}	
+	
+	.product-price {
+		position: absolute;
+		bottom: 4px;
+		left: 4px;
+		width: 183px;
+		padding: 6px 8px;
+		background: #000;
+		background: rgba(0,0,0,0.60);
+		color: #fff;
+	}
+	
+	.store-template .product .attachment-product-image {
+		padding: 3px;
+		border: 1px solid #DDD;
+	}
+	
+	
+	/* single product page */		
+	
+	.attachment-product-image-large {
+		margin: 0 0 20px;
+	}	
+	
+	.product-meta {
+		margin: 0 0 20px;
+
+	}
+	
+	h4.single-product-price {
+		font-size: 36px;
+		line-height: 36px;
+		margin: 0 0 15px;
+	}
+	
+	.edd_price_options {
+		margin: 0 0 15px;	
+	}	
+	
+	/* pagination */
+	
+	.pagination {
+		clear: both;
+		width: 100%;
+	}	
+	
+	.pagination a, .pagination span {
+		padding: 5px 8px;
+		text-align: center;
+		margin-right: 5px;
+		display: block;
+		float: left;
+		border: 1px solid #CCC;	
+	}	
+	
+	.pagination a:hover, .pagination span.current {
+		text-decoration: none;
+		color: white;
+		background: #690;
+		border: 1px solid #517700;
+	}
+	
+	/* commensts */
+	
+	#comments { }
+	#commentsbox { margin-top: 30px }
+	#commentsbox ol,
+	#commentsbox ul {
+	    list-style: none;
+	    margin-left: 0 !important;
+	}
+	#commentsbox li { margin-bottom: 30px }
+	.children {
+	    list-style: none;
+	    margin: 30px 0 0;
+	    text-indent: 0;
+	}
+	.children li.depth-2 { margin: 0 0 0px 50px }
+	.children li.depth-3 { margin: 0 0 0px 50px }
+	.children li.depth-4 { margin: 0 0 0px 50px }
+	.children li.depth-5 { margin: 0 0 0px 50px }
+	.comment-body {
+	    background: #FFF;
+	    position: relative;
+	    padding: 20px 0;
+	    border-bottom: 1px solid #EEE;
+	}
+	#commentsbox .avatar {
+		float: left;
+		margin-right: 30px;
+	}
+	.comment-author {
+	    font-size: 12px;
+	    color: #000;
+	    line-height: 1em;
+		margin-bottom: 5px;
+	}
+	.says { display: none }
+	.comment-meta a {
+	    margin-bottom: 10px;
+	    font-size: 10px;
+	    font-style: italic;
+	    color: #666;
+	}
+	.comment-reply-link {
+	    font-size: 10px;
+	    position: absolute;
+	    bottom: -10px;
+	    right: 0;
+	    border: 1px solid #E3E3E3;
+	    padding: 0 8px;
+	    background: #EEE;
+	    color: #666;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		border-radius: 50px;
+	}
+	.cancel-comment-reply a {
+	    color: #F00;
+	    line-height: 20px;
+	    height: 20px;
+	}
+	#respond { margin: 40px 0 15px }
+	#comments-respond {
+	    margin: 0 0 10px;
+	    padding: 0;
+	    clear: both;
+	}
+	#commentform label {
+	    display: block;
+	    font-size: 11px;
+	}
+	#commentform input {
+	    margin-bottom: 10px;
+	    width: 40%;
+	}
+	#commentform textarea {
+	    margin-top: 10px;
+	    display: block;
+	    width: 70%;
+	}
+	#commentform input#author,
+	#commentform input#email,
+	#commentform input#url,
+	#commentform textarea {
+	    background: #FFF;
+	    position: relative;
+	    padding: 5px;
+	    border: 1px solid #E3E3E3;
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	    -webkit-border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    border-radius: 5px;
+	    -webkit-transition: all 0.2s ease-in-out;
+	    -moz-transition: all 0.2s ease-in-out;
+	    -o-transition: all 0.2s ease-in-out;
+	    -ms-transition: all 0.2s ease-in-out;
+	    transition: all 0.2s ease-in-out;
+	}
+	#commentform input#author:focus,
+	#commentform input#email:focus,
+	#commentform input#url:focus,
+	#commentform textarea:focus {
+	    -moz-box-shadow: 3px 3px 0px #EEE;
+	    -webkit-box-shadow: 3px 3px 0px #EEE;
+	    box-shadow: 3px 3px 0px #EEE;
+	}
+	#commentsubmit {
+		cursor: pointer;
+		font-size: 12px;
+		color: #969696;
+		padding: 5px 0px;
+		width: 100px !important;
+		background: -moz-linear-gradient( top, #f2f2f2 0%, #dbdbdb);
+		background: -webkit-gradient( linear, left top, left bottom,  from(#f2f2f2), to(#dbdbdb));
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border: 1px solid #CCC;
+	}
+	#commentsubmit:hover { background: #EEE !important }
+
+	
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+}
