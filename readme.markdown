@@ -7,6 +7,8 @@ own [Easy Digital Downloads](http://easydigitaldownloads.com) specific themes in
 All of the basic template files are included, as well as the special template files
 for showing download/product information from EDD.
 
+[View a demo of this theme](http://easydigitaldownloads.com/starter-theme/).
+
 Build your own awesome digital store temes
 -------------------------------------------------------
 

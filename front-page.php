@@ -3,7 +3,7 @@
 	<div id="main-content" class="row store-template">
 		<div class="content clearfix">
 			<?php
-			$current_page = get_query_var('paged');
+			$current_page = get_query_var('page');
 			$per_page = get_option('posts_per_page');
 			$offset = $current_page > 0 ? $per_page * ($current_page-1) : 0;
 			$product_args = array(
@@ -54,7 +54,7 @@
 						echo paginate_links( array(
 							'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
 							'format' => '?paged=%#%',
-							'current' => max( 1, get_query_var('paged') ),
+							'current' => max( 1, $current_page ),
 							'total' => $products->max_num_pages
 						) );
 					?>
