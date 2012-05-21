@@ -34,3 +34,7 @@ Template:       edd-starter
 
 @import url("../edd-starter/style.css"); 
 ```
+
+Your theme will now be available in the `Appearance > Themes` page and you can modify the CSS to your liking.
+
+For more information about child themes, visit the [Codex](http://codex.wordpress.org/Child_Themes) page.
