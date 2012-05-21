@@ -1,19 +1,25 @@
-<?php
-/**
- * @package WordPress
- * @subpackage Default_Theme
- */
+<?php get_header(); ?>
 
-get_header(); ?>
 
-	<?php get_sidebar('right'); ?>
-	<?php get_sidebar('left'); ?>
+	<div id="main-content" class="row">	
+		<div class="eightcol">		
+			<div class="content clearfix">
 
-	<div id="main-content" class="has-sidebar">
-		<div class="entry">
-			<h2 class="title">Sorry, not found</h2>
-			<p>We apologize, but you're looking for something that isn't here.</p>
-		</div>
-	</div>
+				<div class="entry clearfix">
+					<div class="entry">
+						<h2 class="title">Not Found</h2>
+						<p>Sorry, but you are looking for something that isn't here.</p>
+						<?php get_search_form(); ?>
+					</div><!--end .entry-->
+				</div><!--end .entry-->
+												
+			</div><!--end .content-->
+		</div><!--end .eightcol-->
+
+		<div class="fourcol last">
+			<?php get_sidebar(); ?>
+		</div><!--end .fourcol-->		
+		
+	</div><!--end .row#main-content-->
 
 <?php get_footer(); ?>

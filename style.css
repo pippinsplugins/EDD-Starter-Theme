@@ -42,7 +42,19 @@ Author URI: http://pippinsplugins.com
 	/* header */
 
 	#header { 
-		background: #181818;
+		background: rgb(28,62,139);
+		background-image: linear-gradient(bottom, rgb(28,62,139) 30%, rgb(56,93,167) 65%);
+		background-image: -o-linear-gradient(bottom, rgb(28,62,139) 30%, rgb(56,93,167) 65%);
+		background-image: -moz-linear-gradient(bottom, rgb(28,62,139) 30%, rgb(56,93,167) 65%);
+		background-image: -webkit-linear-gradient(bottom, rgb(28,62,139) 30%, rgb(56,93,167) 65%);
+		background-image: -ms-linear-gradient(bottom, rgb(28,62,139) 30%, rgb(56,93,167) 65%);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.3, rgb(28,62,139)),
+			color-stop(0.65, rgb(56,93,167))
+		);
 		margin: 0 auto;
 		padding: 30px 0;
 		color: #f0f0f0;
@@ -61,8 +73,9 @@ Author URI: http://pippinsplugins.com
 		font-size: 28px;	
 	}
 	
-	/* main nav */
-	
+	/********************************
+	* main nav 
+	********************************/
 	#navigation-wrap {
 		background: #eee;
 		border-bottom: 1px solid #ccc;
@@ -107,8 +120,9 @@ Author URI: http://pippinsplugins.com
 		border-left: 1px solid #ccc;
 	}
 	
-	/* general/main content */
-	
+	/********************************
+	* general/main content
+	********************************/
 	.content {
 		background: #fff;	
 		border: 1px solid #DDD;
@@ -134,8 +148,10 @@ Author URI: http://pippinsplugins.com
 		color: #000;
 	}	
 	
-	/* sidebar */
-	
+
+	/********************************
+	* sidebar
+	********************************/
 	.sidebar li.widget {
 		display: block;
 		margin: 0 0 20px;
@@ -175,7 +191,9 @@ Author URI: http://pippinsplugins.com
 	}
 	
 	
-	/* footer */
+	/********************************
+	* footer
+	********************************/
 
 	#footer {
 		margin: 20px auto 0;
@@ -215,7 +233,9 @@ Author URI: http://pippinsplugins.com
 	
 	
 	
-	/* store template */
+	/********************************
+	* store template
+	********************************/
 	
 	.store-template .product {	
 		margin-bottom: 20px;
@@ -243,7 +263,9 @@ Author URI: http://pippinsplugins.com
 	}
 	
 	
-	/* single product page */		
+	/********************************
+	* single product page
+	********************************/
 	
 	.attachment-product-image-large {
 		margin: 0 0 20px;
@@ -264,7 +286,9 @@ Author URI: http://pippinsplugins.com
 		margin: 0 0 15px;	
 	}	
 	
-	/* pagination */
+	/********************************
+	* pagination
+	********************************/
 	
 	.pagination {
 		clear: both;
@@ -287,7 +311,9 @@ Author URI: http://pippinsplugins.com
 		border: 1px solid #517700;
 	}
 	
-	/* commensts */
+	/********************************
+	* comments
+	********************************/
 	
 	#comments { }
 	#commentsbox { margin-top: 30px }

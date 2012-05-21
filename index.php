@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-
 	<div id="main-content" class="row">	
 		<div class="eightcol">		
 			<div class="content clearfix">
