@@ -38,3 +38,9 @@ Template:       edd-starter
 Your theme will now be available in the `Appearance > Themes` page and you can modify the CSS to your liking.
 
 For more information about child themes, visit the [Codex](http://codex.wordpress.org/Child_Themes) page.
+
+Configure EDD Constants and Extra Settings
+-------------------------------------------------------
+
+The `includes/edd-config.php` file demonstrates a variety of filters and constants you can use to modify EDD from the theme. This includes changing
+the post type labels and slug, disabling the downloads archive, disabling the default styles, removing the default purchase buttons, and more.

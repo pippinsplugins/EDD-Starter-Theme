@@ -69,9 +69,11 @@ if ( function_exists( 'register_nav_menus' ) ) {
  //adds post thumbnail support - new in Wordpress 2.9
 add_theme_support( 'post-thumbnails' );
 
-function edds_image_sizes() {
-	set_post_thumbnail_size( 649, 245, true ); // default post thumbnail size
-	add_image_size( 'product-image',  199, 245, true ); // product thumbnail
-	add_image_size( 'product-image-large',  627, 400, true ); // main product image
+if(!function_exists('edds_image_sizes')) {
+	function edds_image_sizes() {
+		set_post_thumbnail_size( 649, 245, true ); // default post thumbnail size
+		add_image_size( 'product-image',  199, 245, true ); // product thumbnail
+		add_image_size( 'product-image-large',  627, 400, true ); // main product image
+	}
 }
 add_action('init', 'edds_image_sizes');
