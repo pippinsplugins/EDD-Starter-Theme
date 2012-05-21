@@ -436,11 +436,37 @@ Author URI: http://pippinsplugins.com
 	#commentsubmit:hover { background: #EEE !important }
 
 	
-/* ============================= */
-/* ! Layout for mobile version   */
-/* ============================= */
+/* =================================== */
+/* ! iPad portrait and other tablets   */
+/* =================================== */
 
 @media handheld, only screen and (max-width: 767px) {
+
+	#main-nav li, #main-nav span {
+		font-size: 10px;
+	}
+	#main-nav a { 
+		padding: 3px 5px;
+	}
+
+}
+
+/* =================================== */
+/* ! small tablets   */
+/* =================================== */
+@media handheld, only screen and (max-width: 479px) {
+	#main-nav li, #main-nav span {
+		font-size: 10px;
+	}
+	#main-nav a { 
+		padding: 3px 5px;
+	}
+}
+
+/* =================================== */
+/* ! iPhones   */
+/* =================================== */
+@media handheld, only screen and (max-width: 319px) {
 
 	body {
 		
