@@ -83,7 +83,7 @@
 
 </form>
 
-<div class="comment-rss"><?php comments_rss_link('Subscribe to Comments via RSS'); ?></div>
+<div class="comment-rss"><?php post_comments_feed_link('Subscribe to Comments via RSS'); ?></div>
 
 <?php endif; // If registration required and not logged in ?>
 </div>
