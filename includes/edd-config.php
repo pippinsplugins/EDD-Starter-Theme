@@ -94,7 +94,7 @@ if( function_exists('edd_get_settings') ) {
 	* Scripts
 	************************************************/	
 	
-	// uncomment this to remove all deactivate all styling included with EDD
+	// uncomment the following line to remove and deactivate all styling included with EDD
 	//remove_action('wp_enqueue_scripts', 'edd_register_styles');
 	
 	/************************************************
