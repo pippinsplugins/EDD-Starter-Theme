@@ -9,7 +9,7 @@ for showing download/product information from EDD.
 
 [View a demo of this theme](http://easydigitaldownloads.com/starter-theme/).
 
-Build your own awesome digital store temes
+Build your own awesome digital store themes
 -------------------------------------------------------
 
 Easy Digital Downloads makes it exceptionally easy to setup a digital store, and this theme
