@@ -102,6 +102,7 @@ if( function_exists('edd_get_settings') ) {
 	************************************************/	
 	
 	// remove the automatic purchase link
-	remove_filter('the_content', 'edd_append_purchase_link');
+	//remove_filter('the_content', 'edd_append_purchase_link'); OLD
+	remove_action( 'edd_after_download_content', 'edd_append_purchase_link' ); //New way
 }
 ?>
