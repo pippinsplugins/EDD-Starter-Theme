@@ -33,7 +33,7 @@ global $edd_options; // EDD plugin settings
 		<?php wp_nav_menu(array('theme_location' => 'main_nav','container'	=>	''));?>
 		<?php if(function_exists('edd_get_settings')) { ?>
 			<span id="header-cart">
-				<a href="<?php echo get_permalink($edd_options['purchase_page']); ?>">
+				<a href="<?php echo edd_get_checkout_uri(); ?>">
 					Cart (<span class="header-cart edd-cart-quantity"><?php echo edd_get_cart_quantity(); ?></span>)
 				</a>
 			</span>
