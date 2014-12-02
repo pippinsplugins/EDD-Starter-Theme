@@ -77,3 +77,25 @@ if(!function_exists('edds_image_sizes')) {
 	}
 }
 add_action('init', 'edds_image_sizes');
+
+
+
+/**
+ * Alter the main loop on front_page.php
+ */
+
+function edd_modify_main_loop( $query ) {
+
+	$downloads_per_page = 4;
+
+	if ( is_admin() || ! $query->is_main_query() )
+		return;
+
+	if ( is_home() ) {
+		$query->set( 'posts_per_page', $downloads_per_page ); // make this number come from theme options
+		$query->set( 'post_type', 'download' ); // set post type to download
+		return;
+	}
+
+}
+add_action( 'pre_get_posts', 'edd_modify_main_loop', 1 );
