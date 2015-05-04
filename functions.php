@@ -6,7 +6,7 @@ if(!defined('EDDS_THEME_DIR')) {
 	define('EDDS_THEME_DIR', dirname(__FILE__));
 }
 if(!defined('EDDS_THEME_URL')) {
-	define('EDDS_THEME_URL', get_bloginfo('template_directory'));
+	define('EDDS_THEME_URL', get_stylesheet_directory_uri());
 }
 
 // extra theme files
